@@ -72,4 +72,11 @@ public class PlayList {
 		return r;
 	}
 
+public PlayList shuffle()
+{
+  PlayList shuffledList = new PlayList("Shuffled");
+ shuffledList.songs = getSongs();
+ shuffledList.stars = getStars();
+}
+
 }
