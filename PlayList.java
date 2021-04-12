@@ -77,6 +77,14 @@ public PlayList shuffle()
   PlayList shuffledList = new PlayList("Shuffled");
  shuffledList.songs = getSongs();
  shuffledList.stars = getStars();
+ for(i=0; i < songs.length(); i++)
+ {
+ if(song[i+1] = song.length())
+ {
+   shuffledList.swap(song[i], song[0]);
+ }
+ shuffledList.swap(song[i], song[i+1]);
+ }
 }
 
 }
